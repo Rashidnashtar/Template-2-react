@@ -1,0 +1,15 @@
+.services .box {
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.services .box h3 {
+  margin-bottom: 30px;
+  color: #19c8fa;
+}
+
+@media (max-width: 767px) {
+  .services-container {
+    text-align: center;
+  }
+}

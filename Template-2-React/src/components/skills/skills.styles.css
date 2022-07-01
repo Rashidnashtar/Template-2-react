@@ -1,0 +1,54 @@
+.skills {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.skills .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+  .skills .container > div {
+    flex-basis: 45%;
+  }
+}
+
+.skills .ourskills .prg-holder {
+  margin-bottom: 40px;
+}
+.skills .ourskills .prg-holder h4 {
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.skills .ourskills .prg-holder .prog {
+  height: 30px;
+  background-color: #dedadc;
+}
+.skills .ourskills .prg-holder .prog span {
+  display: block;
+  background-color: #19c8fa;
+  height: 100%;
+  position: relative;
+}
+.skills .ourskills .prg-holder .prog span::before {
+  content: attr(data-progress);
+  position: absolute;
+  background-color: black;
+  color: white;
+  top: -40px;
+  right: -18px;
+  padding: 4px 0;
+  width: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+.skills .ourskills .prg-holder .prog span::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 8px;
+  border-color: black transparent transparent transparent;
+  right: -8px;
+  top: -15px;
+}

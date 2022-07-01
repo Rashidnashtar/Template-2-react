@@ -1,0 +1,73 @@
+.portofolio {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.portofolio .shuffle {
+  display: flex;
+  justify-content: center;
+}
+.portofolio .shuffle li {
+  padding: 10px;
+  cursor: pointer;
+}
+.portofolio .shuffle .active {
+  background-color: #19c8fa;
+  color: white;
+}
+.portofolio .images-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.portofolio .images-container .box {
+  overflow: hidden;
+  position: relative;
+}
+.portofolio .images-container .box:hover .caption {
+  bottom: 0;
+}
+.portofolio .images-container .box:hover img {
+  transform: rotate(3deg) scale(1.1);
+}
+@media (min-width: 768px) {
+  .portofolio .images-container .box {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 1199px) {
+  .portofolio .images-container .box {
+    flex-basis: 25%;
+  }
+}
+.portofolio .images-container .box img {
+  width: 100%;
+  transition: 0.3s;
+
+  max-width: 100%;
+}
+.portofolio .images-container .box .caption {
+  position: absolute;
+  left: 20px;
+  padding: 20px;
+  background-color: white;
+  width: 100%;
+  transition: 0.3s;
+  bottom: -100px;
+}
+.portofolio .images-container .box .caption h4 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.portofolio .images-container .box .caption p {
+  color: var(--main-color);
+}
+.portofolio .more {
+  background-color: var(--main-color);
+  color: white;
+  display: block;
+  width: fit-content;
+  padding: 15px 20px;
+  margin: 30px auto;
+  text-decoration: none;
+  text-transform: uppercase;
+}

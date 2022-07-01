@@ -1,0 +1,41 @@
+.navbar-collapse {
+  display: none;
+}
+.nav-link {
+  color: white;
+  transition: 0.3s;
+  position: relative;
+}
+.nav-link:focus {
+  color: #19c8fa;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  background-color: #19c8fa;
+  bottom: -18px;
+  transition: 0.3s;
+}
+
+@media (max-width: 992px) {
+  .nav-link::after {
+    bottom: 0px;
+  }
+}
+.nav-link:hover {
+  color: #19c8fa;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+.show {
+  display: block;
+}
+.navbar-toggler-icon:focus {
+  outline: 0;
+  box-shadow: none;
+}

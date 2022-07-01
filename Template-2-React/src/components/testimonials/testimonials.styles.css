@@ -1,0 +1,62 @@
+.skills .text {
+  line-height: 1.8;
+  border-bottom: 1px solid #ccc;
+}
+.skills .text p {
+  color: #777;
+  text-align: right;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.skills .testimonials .bullets {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0;
+}
+.skills .testimonials .bullets li {
+  margin-left: 10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+.skills .testimonials .bullets .active {
+  background-color: #19c8fa;
+  border-color: #19c8fa;
+}
+
+.skills .container > div > h3 {
+  margin: 0 0 30px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.skills .container > div > p {
+  color: #777;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.skills .content {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.skills .content img {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 60px;
+}
+@media (max-width: 767px) {
+  .skills .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .skills .content img {
+    margin: 0 auto 20px;
+  }
+}

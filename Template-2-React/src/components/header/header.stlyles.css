@@ -1,0 +1,24 @@
+.header {
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar-brand {
+  color: #19c8fa;
+  transition: 0.3s;
+}
+.navbar-brand:hover {
+  color: white;
+}
+.header .toggler {
+  display: hidden;
+  color: white;
+}
+@media (max-width: 992px) {
+  .header .toggler {
+    display: hidden;
+  }
+}
